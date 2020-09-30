@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Project Tasks Form - Stylesheet .css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Things TO DO</title>
+</head>
+
+<body onload="loadTasks()">
+
+    <!--כותרת הדף-->
+    <h1 style="font-size: 50px;"> My Task Board </h1>
+
+    <!--הטופס למילוי פרטי המשימה-->
+    <form>
+        <table align="center">
+            <tr>
+                <td> <label for="task"> The Task:</label> </td>
+                <td> <input type="text" id="task" /> </td>
+            </tr>
+            <tr>
+                <td> <label for="date"> Date:</label> </td>
+                <td> <input type="date" id="date" /> </td>
+            </tr>
+            <tr>
+                <td> <label for="time"> Time:</label> </td>
+                <td> <input type="time" id="time" /> </td>
+            </tr>
+        </table>
+
+        <!--הכפתור לאיפוס הטופס-->
+        <button type="reset" class="btn btn-dark"> RESET </button>
+        <!--הכפתור לשמירת המשימה-->
+        <button type="reset" class="btn btn-dark" onclick="saveTask()"> SAVE </button>
+    </form>
+
+    <!-- איזור הפתקים -->
+    <div id="container-notes">
+
+    </div>
+
+    <script src="Project Tasks Form - javascript .js"></script>
+
+</body>
+
+</html>

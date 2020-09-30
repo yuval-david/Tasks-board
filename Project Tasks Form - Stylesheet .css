@@ -1,0 +1,145 @@
+/******************************************/
+/************** פרוייקט 1 ****************/
+/*************** 14.11.19 *****************/
+/************** יובל דוד ****************/
+/******************************************/
+
+/*הגדרות עיצוב לכל הדף-תמונת רקע*/
+body {
+    background-image: url(tile.jpg);
+}
+
+/*עיצוב הכותרת הראשית*/
+h1 {
+    font-family: zing easy ,Chalkduster, fantasy;
+    text-align: center;	
+    padding: 20px;
+    color: black;	
+}
+
+/*עיצוב הטופס הראשי ליצירת משימה*/
+form {
+    
+    background-image: url(formbg.jpg);
+    padding: 12px;
+    margin-left:20% ;
+    margin-right: 20%;
+    text-align: center;
+}
+
+/*הגדרות עיצוב לקטגוריות בטופס*/
+label {
+    font-weight: bold;
+}
+
+/*עיצוב הפתקים של המשימות החדשות שנוצרות*/
+#container-notes{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2%;
+}
+
+/*מחלקה לעיצוב הפתק*/
+.noteDiv {
+    background-image: url('notebg.png');
+    background-repeat: no-repeat;
+    padding: 3%;
+    margin: 2%;
+    height: 100%;
+    position: relative;
+
+    animation: noteDiv ease 3s;
+  -webkit-animation: noteDiv ease 3s;
+  -moz-animation: noteDiv ease 3s;
+  -o-animation: noteDiv ease 3s;
+  -ms-animation: noteDiv ease 3s;
+}
+
+  @keyframes noteDiv{
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes noteDiv {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes noteDiv {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes noteDiv {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes noteDiv {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+
+.taskDiv {
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    overflow-y: auto;
+    word-wrap: break-word;
+    display: inline-block;
+}
+
+.dateDiv {
+    height: 15px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.timeDiv {
+    height: 15px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 13px;  
+}
+
+.xIcon {
+    display: inline-block;
+    position: absolute; 
+            top: 20px; 
+            right: 40px;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.xIcon:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
